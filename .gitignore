@@ -1,0 +1,6 @@
+*.exe
+*.tar
+*.bz2
+*.zip
+*.log
+*.pyc

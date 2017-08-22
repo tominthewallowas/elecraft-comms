@@ -1,0 +1,43 @@
+Project: Elecraft Communications
+Author: Tom Bingham
+Email: tom@wb7eux.net
+Collaborator: Chief Jo
+email: tomb@pobox.com
+
+Purpose: I found myself causing a long delay when switching from
+voice mode (SSB, PTT, 500 watts) to data mode (DATA A, VOC, 50 watts)
+because I had to manually turn on data mode, turn on VOX, turn off
+the amplifier, and set the radio to 50 watts. The same is true for
+switching back.
+
+Macros and the Elecraft K3 Utility partially solves the problem
+but not entirely since another Elecraft utility, the KXPA500, has
+to also be running.  The time saving, if any, was negligible.
+
+I have partially developed a Python program running the wxPython gui
+to automate this. With the help of the Elecraft programming manuals
+the task is fairly straight forward.
+
+However, the Elecraft programming model is somewhat flawed in my opinion
+in that it does not provide distinct ON and OFF commands for a number of
+functions.  Most notable to me is the lack of a distinctive ON and OFF
+for the VOX and PTT function and the TX Test and Normal function. They are
+simply toggle functions. As a result, the rig can be in PTT or VOX when
+it needs to swtich to PTT or VOX and the toggling function will cause the
+rig to go into the wrong mode.
+
+I am still working on a monitoring facility to check the PTT, VOX, TX TEST,
+and NORMAL modes so the software can make the correct decision when
+switching between Voice and Data.
+
+Again the Elecraft model is somewhat flawed in that it doesn't make this
+easy. I believe there is a way to directly control the radio functions
+but I have as yet to discover it. And I don't think Elecraft is going to
+cough it up. One fellow, now deceased, figured it out from what I
+understand but I could not find his source code.
+
+That's my story and I'm sticking to it :-) tsb 7/27/2017
+
+A line to test conflicts.
+
+Adding a line to try out conflicts.

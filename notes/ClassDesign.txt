@@ -1,0 +1,32 @@
+Class SerialCommands
+
+elecraftcommands = new SerialCommands()
+
+Initialize
+	- What would the init function do?
+	
+openCommPorts
+	- Obvious
+	
+closeCommPorts
+	- Obvious
+	
+runCommand
+	- A single command?
+		- What is a single command?
+			- comm port and the command?
+			
+runCommands
+	- Many commands?
+		- Named command?
+			- comm port(s) and the commands?
+
+runCommandSequences
+	- Many Named commands placed together?
+		- What is the intent of this method?
+		
+queryPortStatus
+	- Obvious
+	
+runQueryCommand
+	- Single command that queries for status of function?
